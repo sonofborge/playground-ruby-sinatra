@@ -34,8 +34,7 @@ and you will need to run the following command:
 ### The Docker Way
 
 This method requires that you have
-[Git](https://git-scm.com/),
-[Docker](https://docs.docker.com/),
+[Docker](https://docs.docker.com/)
 and
 [Docker Compose](https://docs.docker.com/compose/)
 installed on your system.
@@ -50,9 +49,8 @@ installed on your system.
 
 ### The Local Way
 
-This method require that you have
-[Git](https://git-scm.com/),
-[Ruby](https://www.ruby-lang.org/),
+This method requires that you have
+[Ruby](https://www.ruby-lang.org/)
 and the
 [Bundler](https://bundler.io/)
 gem installed on your system.
@@ -71,3 +69,12 @@ Please check the `.ruby-version` file for the version of ruby this project depen
     ```
 
 1.  You should now be able to access the application at `localhost:5000`.
+
+## Notes
+
+Auto-reloading of the
+[Rack](https://github.com/rack/rack)
+(Ruby webserver interface) is achieved with the
+[Shotgun](https://github.com/rtomayko/shotgun)
+gem,
+so you don't have to restart the application server manually every time you make a code change.
